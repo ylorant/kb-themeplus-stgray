@@ -391,6 +391,8 @@ header{
 .page{
     min-height: 700px;
     height: 100vh;
+    margin-left: 0px;
+    margin-right: 0px;
     
     @media #{$tablet, $mobile}{
         padding-top: 60px;

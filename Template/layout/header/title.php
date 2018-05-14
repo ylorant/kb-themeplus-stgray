@@ -12,7 +12,7 @@
     </span>
     
     <?php if (! empty($description)): ?>
-        <small class="tooltip" title="<?= $this->text->markdownAttribute($description) ?>">
+        <small class="tooltip" title="<?= $this->text->markdown($description) ?>">
             <i class="ico-user-tie"></i>
         </small>
     <?php endif ?>
