@@ -34,6 +34,10 @@ a:hover {
   color: #2d8ca8;
 }
 
+#tooltip-container {
+  z-index: 10;
+}
+
 #modal-box {
   background-color: #fff;
   box-shadow: 0 0.1rem 0.2rem rgba(53, 64, 80, 0.12), 0 0.05rem 0.25rem rgba(53, 64, 80, 0.24) !important;

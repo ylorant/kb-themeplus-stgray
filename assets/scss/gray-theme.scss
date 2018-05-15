@@ -36,6 +36,10 @@ a{
     }
 }
 
+#tooltip-container {
+    z-index: 10;
+}
+
 #modal-box{
     background-color: #fff;
     box-shadow: $shadow-containers !important;
