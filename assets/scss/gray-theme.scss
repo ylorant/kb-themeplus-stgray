@@ -184,7 +184,6 @@ header{
     
     .board-selector-container{
         float: right;
-        // padding: 16px 10px;
     }
     
     .menus-container{
@@ -434,6 +433,10 @@ input[type="number"], input[type="date"], input[type="email"], input[type="passw
     &:focus{
         border-bottom: 2px solid $blue-light;
     }
+}
+
+.js-select-dropdown-autocomplete-rendered input[type="text"]:not(.input-addon-field) {
+    border-bottom: 0px;
 }
 
 .table-small {
