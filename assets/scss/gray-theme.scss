@@ -929,6 +929,7 @@ input[type="number"], input[type="date"], input[type="email"], input[type="passw
     border-radius: 4px;
     color: $gray;
     font-size: 1em;
+    position: relative;
 //    border-width: 1px !important;
 //    border-left-width: 10px !important;
     border-width: 0 !important;
@@ -937,11 +938,30 @@ input[type="number"], input[type="date"], input[type="email"], input[type="passw
     box-shadow: $shadow-containers;
     transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
     
+    &:before {
+        content: " ";
+        position: absolute;
+        width: 0px;
+        border-radius: 4px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        z-index: -1;    
+        transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover:before {
+        width: 100%;
+        right: 0px;
+    }
+
     &:hover{
         // padding: 6px 8px 6px 0px;
         border-bottom: none;
         border-right: none;
-        border-left-width: 16px !important;
+        border-left-width: 10px !important;
         box-shadow: $shadow-containers-up;
         z-index: 2;
     }
@@ -1023,6 +1043,8 @@ input[type="number"], input[type="date"], input[type="email"], input[type="passw
     background-color: #fff;    
     border-color: rgb(252, 242, 0)
 }
+
+.task-board.color-yellow::before,
 td.color-yellow {
     background-color: rgb(252, 242, 0);
 }
@@ -1037,6 +1059,7 @@ td.color-yellow {
     border-color: rgb(168, 207, 255)
 }
 
+.task-board.color-blue::before,
 td.color-blue {
     background-color: rgb(219, 235, 255)
 }
@@ -1052,6 +1075,7 @@ td.color-blue {
     border-color: rgb(74, 227, 113)
 }
 
+.task-board.color-green::before,
 td.color-green {
     background-color: rgb(189, 244, 203)
 }
@@ -1067,6 +1091,7 @@ td.color-green {
     border-color: rgb(205, 133, 254)
 }
 
+.task-board.color-purple::before,
 td.color-purple {
     background-color: rgb(223, 176, 255)
 }
@@ -1082,6 +1107,7 @@ td.color-purple {
     border-color: rgb(255, 151, 151)
 }
 
+.task-board.color-red::before,
 td.color-red {
     background-color: rgb(255, 187, 187)
 }
@@ -1097,6 +1123,7 @@ td.color-red {
     border-color: rgb(255, 172, 98)
 }
 
+.task-board.color-orange::before,
 td.color-orange {
     background-color: rgb(255, 215, 179)
 }
@@ -1112,6 +1139,7 @@ td.color-orange {
     border-color: rgb(204, 204, 204)
 }
 
+.task-board.color-grey::before,
 td.color-grey {
     background-color: rgb(238, 238, 238)
 }
@@ -1127,6 +1155,7 @@ td.color-grey {
     border-color: #4e342e
 }
 
+.task-board.color-brown::before,
 td.color-brown {
     background-color: #d7ccc8
 }
@@ -1142,6 +1171,7 @@ td.color-brown {
     border-color: #e64a19
 }
 
+.task-board.color-deep_orange::before,
 td.color-deep_orange {
     background-color: #ffab91
 }
@@ -1157,6 +1187,7 @@ td.color-deep_orange {
     border-color: #455a64
 }
 
+.task-board.color-dark_grey::before,
 td.color-dark_grey {
     background-color: #cfd8dc
 }
@@ -1172,6 +1203,7 @@ td.color-dark_grey {
     border-color: #d81b60
 }
 
+.task-board.color-pink::before,
 td.color-pink {
     background-color: #f48fb1
 }
@@ -1187,6 +1219,7 @@ td.color-pink {
     border-color: rgb(13, 173, 180);
 }
 
+.task-board.color-teal::before,
 td.color-teal {
     background-color: rgb(13, 173, 180);
 }
@@ -1202,6 +1235,7 @@ td.color-teal {
     border-color: #00bcd4
 }
 
+.task-board.color-cyan::before,
 td.color-cyan {
     background-color: #b2ebf2
 }
@@ -1217,6 +1251,7 @@ td.color-cyan {
     border-color: #afb42b
 }
 
+.task-board.color-lime::before,
 td.color-lime {
     background-color: #e6ee9c
 }
@@ -1232,6 +1267,7 @@ td.color-lime {
     border-color: #689f38
 }
 
+.task-board.color-light_green::before,
 td.color-light_green {
     background-color: #dcedc8
 }
@@ -1247,6 +1283,7 @@ td.color-light_green {
     border-color: #ffa000
 }
 
+.task-board.color-amber::before,
 td.color-amber {
     background-color: #ffe082
 }
