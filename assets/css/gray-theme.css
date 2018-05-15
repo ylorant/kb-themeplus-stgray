@@ -822,7 +822,6 @@ input[type=number]:focus, input[type=date]:focus, input[type=email]:focus, input
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .task-board:hover {
-  padding: 6px 8px 6px 0px;
   border-bottom: none;
   border-right: none;
   border-left-width: 16px !important;
@@ -833,7 +832,6 @@ input[type=number]:focus, input[type=date]:focus, input[type=email]:focus, input
 .task-board-title {
   font-size: 14px;
   font-weight: 400;
-  text-transform: uppercase;
   color: #898989;
 }
 

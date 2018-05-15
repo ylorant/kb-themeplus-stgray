@@ -938,7 +938,7 @@ input[type="number"], input[type="date"], input[type="email"], input[type="passw
     transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover{
-        padding: 6px 8px 6px 0px;
+        // padding: 6px 8px 6px 0px;
         border-bottom: none;
         border-right: none;
         border-left-width: 16px !important;
@@ -952,7 +952,7 @@ input[type="number"], input[type="date"], input[type="email"], input[type="passw
 .task-board-title {
     font-size: 14px;
     font-weight: 400;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     color: $gray;
 }
 
