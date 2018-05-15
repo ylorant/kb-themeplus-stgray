@@ -848,8 +848,7 @@ input[type="number"], input[type="date"], input[type="email"], input[type="passw
         color: $gray-dark;
     }
     .board-column-header{
-        background-color: rgba(255, 255, 255, 1);
-        box-shadow: $shadow-containers !important;
+        background-color: transparent;
         border-radius: 4px;
         padding: 4px 16px 4px 4px;
         border-radius: 6px;
@@ -890,8 +889,10 @@ input[type="number"], input[type="date"], input[type="email"], input[type="passw
         color: rgba(255, 255, 255, 0);
         border-radius: 16px;
         position: absolute;
-        top: -8px;
-        right: -8px;
+        top: 50%;
+        right: 8px;
+        margin-top: -0.85em;
+        
         > span{
             color: #fff;
         }
