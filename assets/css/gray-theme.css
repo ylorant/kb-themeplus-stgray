@@ -807,6 +807,10 @@ input[type=number]:focus, input[type=date]:focus, input[type=email]:focus, input
   }
 }
 
+div.ganttview-block-container {
+  height: 31px;
+}
+
 .filters {
   border: none;
 }
