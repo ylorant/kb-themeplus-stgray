@@ -1,5 +1,4 @@
 @import 'variaveis';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 
 * {
     margin: 0;
@@ -291,7 +290,7 @@ header{
                     height: 32px;
                     background-color: $gray-darkest;
                     padding: 4px 10px;
-                    font-size: 12px;
+                    font-size: $font-size-small;
                     position: fixed;
                     left: 0;
                     top: 60px;
@@ -455,13 +454,13 @@ input[type="number"], input[type="date"], input[type="email"], input[type="passw
     box-shadow: $shadow-containers-up;
     
     ul{
+				display: flex;
+  			justify-content: space-around;
         margin: 0;
         padding: 0;
     }
     
     li{
-        float: left;
-        width: 25%;
         padding: 0;
         margin: 0;
     }
@@ -470,7 +469,7 @@ input[type="number"], input[type="date"], input[type="email"], input[type="passw
         display: block;
         width: 100%;
         padding: 10px;
-        font-size: 10px;
+        font-size: $font-size-smaller;
         line-height: 1.2;
         text-align: center;
         text-decoration: none;
@@ -494,7 +493,7 @@ input[type="number"], input[type="date"], input[type="email"], input[type="passw
             width: 100%;
             color: $gray;
             font-size: 24px;
-            padding-bottom: 1px;
+            padding-bottom: 3px;
         }
         
         &:hover, &:hover i{
@@ -549,7 +548,7 @@ input[type="number"], input[type="date"], input[type="email"], input[type="passw
     min-height: 100vh;
     padding-bottom: 40px;
 //    height: 80vh;
-    transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
     
     .sidebar-title{
         h2{
@@ -610,7 +609,6 @@ input[type="number"], input[type="date"], input[type="email"], input[type="passw
         
         &.active-mobile{
             right: 0;
-            box-shadow: 0 .1rem 1rem rgba(53, 64, 80, .4), 0 .05rem 50rem rgba(53, 64, 80, 1);
         }
     }
 }
@@ -1496,3 +1494,24 @@ td.color-amber {
 .datepicker.sample {
 	margin-left: 50px;
 }
+
+small {
+	font-size: $font-size-small;
+}
+
+.form-login {
+	margin: 5% auto;
+
+	> form {
+		margin: 0 auto;
+			width: max-content;
+	}
+}
+
+.table-list-details {
+	> small:not(last-child) {
+		margin-right: 0.5rem;
+	}
+}
+
+
